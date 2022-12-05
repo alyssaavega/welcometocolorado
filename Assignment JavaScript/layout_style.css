@@ -1,0 +1,44 @@
+footer {
+  grid-area: footer;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto auto;
+}
+nav {
+  grid-area: nav;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+}
+section {
+  grid-area: section;
+}
+#layout {
+  display: grid;
+  grid-gap 0px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+  "nav nav"
+  "header header"
+  "section section"
+  "main main"
+  "footer footer"
+}
+aside {
+  text-align: center;
+  font-family: "Century Gothic", Arial, Helvetica, san-serif;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  letter-spacing: -1px;
+  float: right;
+  width: 20%;
+}
